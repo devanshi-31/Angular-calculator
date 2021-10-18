@@ -1,0 +1,20 @@
+<div class="calculator">
+  <h1> Calculator</h1>
+
+  <div>
+    <br>
+    <input class="result" type="text" readonly value="{{ result }}"><br><br><br><br>
+  </div>
+
+  <div>
+    <button class="responsive long" *ngFor="let longButton of longButtons" (click)="addToExpression(longButton)">
+      {{ longButton }}
+    </button>
+    <button class="responsive " *ngFor="let button of buttons" (click)="addToExpression(button)">
+      {{ button }}
+    </button>
+    <button class="responsive long" *ngFor="let longButton1 of longButtons1" (click)="addToExpression(longButton1)">
+      {{ longButton1 }}
+    </button>
+  </div>
+</div>
